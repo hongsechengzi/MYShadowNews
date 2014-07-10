@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2098F5F196EE46C0000EB8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2098F5E196EE46C0000EB8E /* Foundation.framework */; };
+		C2098F61196EE46C0000EB8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2098F60196EE46C0000EB8E /* CoreGraphics.framework */; };
+		C2098F63196EE46C0000EB8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2098F62196EE46C0000EB8E /* UIKit.framework */; };
+		C2098F69196EE46C0000EB8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2098F67196EE46C0000EB8E /* InfoPlist.strings */; };
+		C2098F6B196EE46C0000EB8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098F6A196EE46C0000EB8E /* main.m */; };
+		C2098F6F196EE46C0000EB8E /* SNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098F6E196EE46C0000EB8E /* SNAppDelegate.m */; };
+		C2098F71196EE46C0000EB8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2098F70196EE46C0000EB8E /* Images.xcassets */; };
+		C2098F78196EE46C0000EB8E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2098F77196EE46C0000EB8E /* XCTest.framework */; };
+		C2098F79196EE46C0000EB8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2098F5E196EE46C0000EB8E /* Foundation.framework */; };
+		C2098F7A196EE46C0000EB8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2098F62196EE46C0000EB8E /* UIKit.framework */; };
+		C2098F82196EE46C0000EB8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2098F80196EE46C0000EB8E /* InfoPlist.strings */; };
+		C2098F84196EE46C0000EB8E /* MyShadowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098F83196EE46C0000EB8E /* MyShadowTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2098F7B196EE46C0000EB8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2098F53196EE46C0000EB8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2098F5A196EE46C0000EB8E;
+			remoteInfo = MyShadow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2098F5B196EE46C0000EB8E /* MyShadow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShadow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2098F5E196EE46C0000EB8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C2098F60196EE46C0000EB8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C2098F62196EE46C0000EB8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C2098F66196EE46C0000EB8E /* MyShadow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyShadow-Info.plist"; sourceTree = "<group>"; };
+		C2098F68196EE46C0000EB8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2098F6A196EE46C0000EB8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2098F6C196EE46C0000EB8E /* MyShadow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyShadow-Prefix.pch"; sourceTree = "<group>"; };
+		C2098F6D196EE46C0000EB8E /* SNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNAppDelegate.h; sourceTree = "<group>"; };
+		C2098F6E196EE46C0000EB8E /* SNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNAppDelegate.m; sourceTree = "<group>"; };
+		C2098F70196EE46C0000EB8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C2098F76196EE46C0000EB8E /* MyShadowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyShadowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2098F77196EE46C0000EB8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C2098F7F196EE46C0000EB8E /* MyShadowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyShadowTests-Info.plist"; sourceTree = "<group>"; };
+		C2098F81196EE46C0000EB8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2098F83196EE46C0000EB8E /* MyShadowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShadowTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2098F58196EE46C0000EB8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2098F61196EE46C0000EB8E /* CoreGraphics.framework in Frameworks */,
+				C2098F63196EE46C0000EB8E /* UIKit.framework in Frameworks */,
+				C2098F5F196EE46C0000EB8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2098F73196EE46C0000EB8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2098F78196EE46C0000EB8E /* XCTest.framework in Frameworks */,
+				C2098F7A196EE46C0000EB8E /* UIKit.framework in Frameworks */,
+				C2098F79196EE46C0000EB8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2098F52196EE46C0000EB8E = {
+			isa = PBXGroup;
+			children = (
+				C2098F64196EE46C0000EB8E /* MyShadow */,
+				C2098F7D196EE46C0000EB8E /* MyShadowTests */,
+				C2098F5D196EE46C0000EB8E /* Frameworks */,
+				C2098F5C196EE46C0000EB8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2098F5C196EE46C0000EB8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2098F5B196EE46C0000EB8E /* MyShadow.app */,
+				C2098F76196EE46C0000EB8E /* MyShadowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2098F5D196EE46C0000EB8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2098F5E196EE46C0000EB8E /* Foundation.framework */,
+				C2098F60196EE46C0000EB8E /* CoreGraphics.framework */,
+				C2098F62196EE46C0000EB8E /* UIKit.framework */,
+				C2098F77196EE46C0000EB8E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2098F64196EE46C0000EB8E /* MyShadow */ = {
+			isa = PBXGroup;
+			children = (
+				C2098F6D196EE46C0000EB8E /* SNAppDelegate.h */,
+				C2098F6E196EE46C0000EB8E /* SNAppDelegate.m */,
+				C2098F70196EE46C0000EB8E /* Images.xcassets */,
+				C2098F65196EE46C0000EB8E /* Supporting Files */,
+			);
+			path = MyShadow;
+			sourceTree = "<group>";
+		};
+		C2098F65196EE46C0000EB8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2098F66196EE46C0000EB8E /* MyShadow-Info.plist */,
+				C2098F67196EE46C0000EB8E /* InfoPlist.strings */,
+				C2098F6A196EE46C0000EB8E /* main.m */,
+				C2098F6C196EE46C0000EB8E /* MyShadow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2098F7D196EE46C0000EB8E /* MyShadowTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2098F83196EE46C0000EB8E /* MyShadowTests.m */,
+				C2098F7E196EE46C0000EB8E /* Supporting Files */,
+			);
+			path = MyShadowTests;
+			sourceTree = "<group>";
+		};
+		C2098F7E196EE46C0000EB8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2098F7F196EE46C0000EB8E /* MyShadowTests-Info.plist */,
+				C2098F80196EE46C0000EB8E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2098F5A196EE46C0000EB8E /* MyShadow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2098F87196EE46C0000EB8E /* Build configuration list for PBXNativeTarget "MyShadow" */;
+			buildPhases = (
+				C2098F57196EE46C0000EB8E /* Sources */,
+				C2098F58196EE46C0000EB8E /* Frameworks */,
+				C2098F59196EE46C0000EB8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyShadow;
+			productName = MyShadow;
+			productReference = C2098F5B196EE46C0000EB8E /* MyShadow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2098F75196EE46C0000EB8E /* MyShadowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2098F8A196EE46C0000EB8E /* Build configuration list for PBXNativeTarget "MyShadowTests" */;
+			buildPhases = (
+				C2098F72196EE46C0000EB8E /* Sources */,
+				C2098F73196EE46C0000EB8E /* Frameworks */,
+				C2098F74196EE46C0000EB8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2098F7C196EE46C0000EB8E /* PBXTargetDependency */,
+			);
+			name = MyShadowTests;
+			productName = MyShadowTests;
+			productReference = C2098F76196EE46C0000EB8E /* MyShadowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2098F53196EE46C0000EB8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Shadow;
+				TargetAttributes = {
+					C2098F75196EE46C0000EB8E = {
+						TestTargetID = C2098F5A196EE46C0000EB8E;
+					};
+				};
+			};
+			buildConfigurationList = C2098F56196EE46C0000EB8E /* Build configuration list for PBXProject "MyShadow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2098F52196EE46C0000EB8E;
+			productRefGroup = C2098F5C196EE46C0000EB8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2098F5A196EE46C0000EB8E /* MyShadow */,
+				C2098F75196EE46C0000EB8E /* MyShadowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2098F59196EE46C0000EB8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2098F69196EE46C0000EB8E /* InfoPlist.strings in Resources */,
+				C2098F71196EE46C0000EB8E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2098F74196EE46C0000EB8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2098F82196EE46C0000EB8E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2098F57196EE46C0000EB8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2098F6B196EE46C0000EB8E /* main.m in Sources */,
+				C2098F6F196EE46C0000EB8E /* SNAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2098F72196EE46C0000EB8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2098F84196EE46C0000EB8E /* MyShadowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2098F7C196EE46C0000EB8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2098F5A196EE46C0000EB8E /* MyShadow */;
+			targetProxy = C2098F7B196EE46C0000EB8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2098F67196EE46C0000EB8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2098F68196EE46C0000EB8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C2098F80196EE46C0000EB8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2098F81196EE46C0000EB8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2098F85196EE46C0000EB8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C2098F86196EE46C0000EB8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2098F88196EE46C0000EB8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyShadow/MyShadow-Prefix.pch";
+				INFOPLIST_FILE = "MyShadow/MyShadow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C2098F89196EE46C0000EB8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyShadow/MyShadow-Prefix.pch";
+				INFOPLIST_FILE = "MyShadow/MyShadow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C2098F8B196EE46C0000EB8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyShadow.app/MyShadow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyShadow/MyShadow-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyShadowTests/MyShadowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C2098F8C196EE46C0000EB8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyShadow.app/MyShadow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyShadow/MyShadow-Prefix.pch";
+				INFOPLIST_FILE = "MyShadowTests/MyShadowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2098F56196EE46C0000EB8E /* Build configuration list for PBXProject "MyShadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2098F85196EE46C0000EB8E /* Debug */,
+				C2098F86196EE46C0000EB8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2098F87196EE46C0000EB8E /* Build configuration list for PBXNativeTarget "MyShadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2098F88196EE46C0000EB8E /* Debug */,
+				C2098F89196EE46C0000EB8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C2098F8A196EE46C0000EB8E /* Build configuration list for PBXNativeTarget "MyShadowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2098F8B196EE46C0000EB8E /* Debug */,
+				C2098F8C196EE46C0000EB8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2098F53196EE46C0000EB8E /* Project object */;
+}

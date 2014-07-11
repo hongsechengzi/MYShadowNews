@@ -1,21 +1,52 @@
 //
 //  SNAppDelegate.m
-//  MyShadow
+//  ShadowNews
 //
-//  Created by lanou3g on 14-7-10.
+//  Created by lanou3g on 14-6-28.
 //  Copyright (c) 2014年 Shadow. All rights reserved.
 //
 
 #import "SNAppDelegate.h"
+#import "SNMainController.h"
 
 @implementation SNAppDelegate
-
+- (void)dealloc
+{
+    RELEASE_SAFELY(_window);
+    [super dealloc];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //测试左边栏
+//    SNCategoryViewController * categoryVC = [[SNCategoryViewController alloc] init];
+//   self.window.rootViewController = categoryVC;
+    //测试右边栏个人
+//    SNUserViewController * userVC = [[SNUserViewController alloc] init];
+//    self.window.rootViewController = userVC;
+    //测试登入页面
+    
+   
+//    SNLoginViewController * userVC = [[SNLoginViewController alloc] init];
+//    UINavigationController * rootNC = [[UINavigationController alloc] initWithRootViewController:userVC];
+//    self.window.rootViewController = rootNC;
+//     SNPolViewController * VC = [[SNPolViewController alloc] init];
+//     self.window.rootViewController = VC ;
+
+//     [SNPolPageModel polPageSuccess:^(NSDictionary * polDic) {
+//         NSLog(@"headerNewsArray = %@",polDic);
+//     } fail:^(NSError *error) {
+//         NSLog(@"error:%@",error);
+//     }];
+    
+   
+    
+    self.window.rootViewController = [[SNMainController sharedInstance] navController];
+    
     return YES;
 }
 

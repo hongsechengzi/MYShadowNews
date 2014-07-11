@@ -20,11 +20,9 @@
 #import "SNNomarlNewsModel.h"
 #import "SNNomarlNewsPageModel.h"
 #import "SNNomarlNewsTV.h"
-#import "SNHomeConst.h"
+
 
 #import "SNLocalNewsTV.h"
-#import "SNSimpleNewsTV.h"
-#import "SNSimplePageModel.h"
 #import "SNHeaderNewsTV.h"
 
 #import "SNCategoryViewController.h"
@@ -34,12 +32,15 @@
 #import "SNNewsMenu.h"
 #import "SNMainMenuModel.h"
 
+#import "YRSideViewController.h"
+#import "SNAppDelegate.h"
+
 @interface SNNewsViewController ()
 
 @property(nonatomic,retain)NSMutableArray * SNNVDelegates;//!< 当前各个视图的代理.
 @property (retain, nonatomic) NSMutableDictionary * SNNVLoadedViews; //!< 存储已加载的视图.以新闻版块名为键,以视图为值.
 
-@property(nonatomic,assign)NSInteger currentIndex;//!<当前头条新闻图像下标
+//@property(nonatomic,assign)NSInteger currentIndex;//!<当前头条新闻图像下标
 @property(nonatomic,retain)SNNewsTableView * tableView;//!表视图
 @property(nonatomic,retain)NSMutableArray * newsMenuArray;//!<菜单数组
 
@@ -137,16 +138,16 @@
         SNHeaderNewsTV * headerNewsTV = [[[SNHeaderNewsTV alloc] initWithTableView:newsTableView] autorelease];
         [headerNewsTV handleHeaderPageData];
     }
-    if ([oneNewsMenu.pageKey isEqualToString:SNMainMenuNormalPageKey]) {
+    if ([oneNewsMenu.pageKey isEqualToString:SNMainMenuNormalPageKey] ||[oneNewsMenu.pageKey isEqualToString:SNMainMenuSimplePageKey]) {
         SNNomarlNewsTV * nomarlNewsTV = [[SNNomarlNewsTV alloc] initWithTableView:newsTableView];
         [nomarlNewsTV handlePageDataWithMainMenu:oneNewsMenu];
     }
-    if ([oneNewsMenu.pageKey isEqualToString:SNMainMenuSimplePageKey]) {
-        SNSimpleNewsTV * simpleNewsTV = [[SNSimpleNewsTV alloc] initWithTableView:newsTableView];
-        [simpleNewsTV
-         handlePageDataWithMainMenu:oneNewsMenu];
-        
-    }
+//    if ([oneNewsMenu.pageKey isEqualToString:SNMainMenuSimplePageKey]) {
+//        SNSimpleNewsTV * simpleNewsTV = [[SNSimpleNewsTV alloc] initWithTableView:newsTableView];
+//        [simpleNewsTV
+//         handlePageDataWithMainMenu:oneNewsMenu];
+//        
+//    }
     if ([oneNewsMenu.pageKey isEqualToString:SNMainMenuLocalPageKey]) {
         SNLocalNewsTV * localNewsTV = [[SNLocalNewsTV alloc] initWithTableView:newsTableView];
         [localNewsTV handlePageDataWithMainMenu:oneNewsMenu];
@@ -159,8 +160,6 @@
     }
     
 
-    
-    newsTableView.headerView.scrollView.delegate = self;
     
     return newsTableView;
 
@@ -220,6 +219,7 @@
    UIBarButtonItem * backButtonItem = [[UIBarButtonItem alloc] init];
    backButtonItem.title = @"";
     self.navigationItem.backBarButtonItem = backButtonItem;
+    
     UIBarButtonItem * leftButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:SNHeaderLeftBarItemImage] style:UIBarButtonItemStylePlain target:self action:@selector(didClickLeftBarItemAction:)];
     self.navigationItem.leftBarButtonItem = leftButtonItem;
     [leftButtonItem release];
@@ -230,16 +230,16 @@
 }
 - (void)didClickLeftBarItemAction:(UIBarButtonItem *)buttonItem
 {
-    SNCategoryViewController * catergory = [[SNCategoryViewController alloc] init];
-    [self presentViewController:catergory animated:YES completion:nil];
-    [catergory release];
+    SNAppDelegate *delegate=(SNAppDelegate*)[[UIApplication sharedApplication]delegate];
+    YRSideViewController * sideViewController=[delegate sideViewController];
+    [sideViewController showLeftViewController:true];
    
 }
 - (void)didClickRightBarItemAction:(UIBarButtonItem *)buttonItem
 {
-    SNUserViewController * user = [[SNUserViewController alloc] init];
-    [self.navigationController pushViewController:user animated:YES];
-    [user release];
+    SNAppDelegate * delegate=(SNAppDelegate *)[[UIApplication sharedApplication]delegate];
+    YRSideViewController * sideViewController=[delegate sideViewController];
+    [sideViewController showRightViewController:true];
 }
 
 - (void)didReceiveMemoryWarning
@@ -247,136 +247,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-#pragma mark ---------头条新闻滚动视图设置-----
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    if ([scrollView isKindOfClass:[UITableView class]]) {
-        return ;
-    }
-    if ([scrollView isKindOfClass:[SNNewsHeaderView class]]) {
-        return;
-    }
-    UIScrollView * secondScroll = [scrollView.subviews objectAtIndex:1];
-    UIImageView * imageView = [secondScroll.subviews objectAtIndex:0];
-//    UIImage * img = imageView.image;
-//    SNNewsTableView * tableView = [self.tableView.headerView.imageArray lastObject];
-//    
-//    __block UIImage * imageCopy = nil;
-    
-//    [self.tableView.headerView.imageArray enumerateObjectsUsingBlock:^(UIImageView * obj, NSUInteger idx, BOOL *stop) {
-//        imageCopy = obj.image;
-//        int a = 10;
-//    }];
-    
-   _currentIndex = [self.tableView.headerView.imageArray indexOfObject:imageView];
-    
-}
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    if ([scrollView isKindOfClass:[UITableView class]]) {
-        return;
-    }
-    if ([scrollView isKindOfClass:[SNNewsHeaderView class]]) {
-        return;
-    }
-    CGPoint  offset = scrollView.contentOffset;
-    if (offset.x < SCREENWIDTH) {
-        [self scrollViewWillDidScrollRight:scrollView];
-    }
-    if (offset.x > SCREENWIDTH) {
-        [self scrollViewWillDidScrollLeft:scrollView];
-    }
-}
-
-- (void)scrollViewWillDidScrollRight:(UIScrollView *)scrollView
-{
-    UIScrollView * firstScroll = [scrollView.subviews objectAtIndex:0];
-    if (_currentIndex == 0) {
-        UIImageView * showImageView = [self.tableView.headerView.imageArray lastObject];
-        if (firstScroll.subviews.count == 0) {
-            [firstScroll addSubview:showImageView];
-        }else{
-            [firstScroll.subviews.firstObject removeFromSuperview];
-            [firstScroll addSubview:showImageView];
-        }
-    }else{
-    UIImageView * showImageView = [self.tableView.headerView.imageArray objectAtIndex:_currentIndex - 1];
-        if (firstScroll.subviews.count == 0) {
-            [firstScroll addSubview:showImageView];
-        }else{
-            [firstScroll.subviews.firstObject removeFromSuperview];
-            [firstScroll addSubview:showImageView];
-        }
-    }
-}
-- (void)scrollViewWillDidScrollLeft:(UIScrollView *)scrollView
-{
-    UIScrollView * thirdScroll = [scrollView.subviews objectAtIndex:2];
-    if (_currentIndex == self.tableView.headerView.imageArray.count - 1) {
-        UIImageView * showImageView = [self.tableView.headerView.imageArray firstObject];
-        if (thirdScroll.subviews.count == 0) {
-            [thirdScroll addSubview:showImageView];
-        }else{
-            [thirdScroll.subviews.firstObject removeFromSuperview];
-            [thirdScroll addSubview:showImageView];
-        }
-    }else{
-        UIImageView * showImageView = [self.tableView.headerView.imageArray objectAtIndex:_currentIndex + 1];
-        if (thirdScroll.subviews.count == 0) {
-            [thirdScroll addSubview:showImageView];
-        }else{
-            [thirdScroll.subviews.firstObject removeFromSuperview];
-            [thirdScroll addSubview:showImageView];
-        }
-    }
-}
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    // ???:滚动图快速转动有问题
-    
-    if ([scrollView isKindOfClass:[UITableView class]]) {
-        return ;
-    }
-    CGPoint  offset = scrollView.contentOffset;
-    if ([scrollView isKindOfClass:[SNNewsHeaderView class]]) {
-        
-        
-//        NSLog(@"______%ld",self.newsItemIndex);
-//        if (self.newsItemIndex*60+30 < 160 ||self.newsItemIndex * 60 +30 > self.newsItemArray.count * 60 - 160) {
-//            return;
-//        }else{
-//        // ???:动画优化
-//        offset.x = self.newsItemIndex *60 +30 - 160;
-//        scrollView.contentOffset = offset;
-//        
-//        return;
-//        }
-        return;
-    }
-    UIScrollView * firstScroll = [scrollView.subviews objectAtIndex:0];
-    UIScrollView * secondScroll = [scrollView.subviews objectAtIndex:1];
-    UIScrollView * thirdScroll = [scrollView.subviews objectAtIndex:2];
-    if (offset.x == 0) {
-        UIImageView * firstView = firstScroll.subviews.firstObject;
-        [secondScroll.subviews.firstObject removeFromSuperview];
-        [secondScroll addSubview:firstView];
-        
-        offset.x = SCREENWIDTH;
-        scrollView.contentOffset = offset;
-    }
-    if (offset.x == 2 * SCREENWIDTH) {
-        UIImageView * thirdView = thirdScroll.subviews.firstObject;
-        [secondScroll.subviews.firstObject removeFromSuperview];
-        [secondScroll addSubview:thirdView];
-        offset.x = SCREENWIDTH;
-        scrollView.contentOffset = offset;
-    }
-}
-
-
-
+ 
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

@@ -23,7 +23,7 @@
     
 //    SNMainMenu * sport = [SNMainMenu mainMenuTitle:@"体育" urlKeyStr:@"T1348649079062" url:@"http://c.3g.163.com/nc/article/list/T1348649079062/0-20.html" pageKey:SNMainMenuNormalPageKey];
     SNMainMenu * forum = [SNMainMenu mainMenuTitle:@"论坛" urlKeyStr:@"T1349837670307" url:@"http://c.3g.163.com/nc/article/list/T1349837670307/0-20.html" pageKey:SNMainMenuNormalPageKey];
-    SNMainMenu * blogs = [SNMainMenu mainMenuTitle:@"博客" urlKeyStr:@"T1349837698345" url:@"http://c.3g.163.com/nc/article/list/T1349837698345/0-20.html" pageKey:SNMainMenuNormalPageKey];
+    SNMainMenu * blogs = [SNMainMenu mainMenuTitle:@"博客" urlKeyStr:@"T1349837698345" url:@"http://c.3g.163.com/nc/article/list/T1349837698345/0-20.html" pageKey:SNMainMenuSimplePageKey];
     SNMainMenu * society = [SNMainMenu mainMenuTitle:@"社会" urlKeyStr:@"T1348648037603" url:@"http://c.3g.163.com/nc/article/list/T1348648037603/0-20.html" pageKey:SNMainMenuNormalPageKey];
     SNMainMenu * movie = [SNMainMenu mainMenuTitle:@"电影" urlKeyStr:@"T1348648650048" url:@"http://c.3g.163.com/nc/article/list/T1348648650048/0-20.html" pageKey:SNMainMenuNormalPageKey];
     SNMainMenu * car = [SNMainMenu mainMenuTitle:@"汽车" urlKeyStr:@"T1348654060988" url:@"http://c.3g.163.com/nc/article/list/T1348648756099/0-20.html" pageKey:SNMainMenuNormalPageKey];

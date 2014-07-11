@@ -58,7 +58,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    SNSimpleNewsModel * news = [self.newsArray objectAtIndex:indexPath.row];
+    SNNomarlNewsModel * news = [self.newsArray objectAtIndex:indexPath.row];
     
     static NSString * identifier = @"timeCell";
     SNTimeCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];

@@ -10,6 +10,10 @@
 #import "SNNewsViewController.h"
 
 #import "SNMainMenuModel.h"
+#import "YRSideViewController.h"
+
+#import "SNCategoryViewController.h"
+#import "SNUserViewController.h"
 
 @implementation SNMainController
 
@@ -33,16 +37,12 @@ static SNMainController * handle = nil;
 {
     self = [super init];
     if (self) {
+        
         SNNewsViewController * newsVC = [[SNNewsViewController alloc] init];
         self.newsVC = newsVC;
-        
-//        NSArray * newsItem = @[@"头条",@"推荐",@"娱乐",@"体育",@"财经",@"科技",@"轻松一刻",@"时尚",@"北京",@"聚合阅读",@"军事"];
-        NSDictionary * mainMenuDic = [SNMainMenuModel mianMenuDic];
-        
-        newsVC.newsMenuDic = mainMenuDic;
-        
         [newsVC release];
-        UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:self.newsVC];
+        UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:newsVC];
+        
         self.navController = nav;       
         [nav release];       
     }

@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class SNSimpleNewsModel;
+//@class SNSimpleNewsModel;
+@class SNNomarlNewsModel;
 @interface SNSimpleNewsCell : UITableViewCell
 
-@property(nonatomic,retain)SNSimpleNewsModel * news;
+//@property(nonatomic,retain)SNSimpleNewsModel * news;
+@property(nonatomic,retain)SNNomarlNewsModel * news;
 
 @end

@@ -35,15 +35,11 @@
 		C20990C3196EE4900000EB8E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C2098FB1196EE4900000EB8E /* LICENSE */; };
 		C20990C4196EE4900000EB8E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C2098FB2196EE4900000EB8E /* README.md */; };
 		C20990C5196EE4900000EB8E /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098FB5196EE4900000EB8E /* Base64.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		C20990C6196EE4900000EB8E /* LICENCE.md in Resources */ = {isa = PBXBuildFile; fileRef = C2098FB6196EE4900000EB8E /* LICENCE.md */; };
-		C20990C7196EE4900000EB8E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C2098FB7196EE4900000EB8E /* README.md */; };
 		C20990C8196EE4900000EB8E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098FBB196EE4900000EB8E /* FMDatabase.m */; };
 		C20990C9196EE4900000EB8E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098FBD196EE4900000EB8E /* FMDatabaseAdditions.m */; };
 		C20990CA196EE4900000EB8E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098FBF196EE4900000EB8E /* FMDatabasePool.m */; };
 		C20990CB196EE4900000EB8E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098FC1196EE4900000EB8E /* FMDatabaseQueue.m */; };
 		C20990CC196EE4900000EB8E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098FC4196EE4900000EB8E /* FMResultSet.m */; };
-		C20990CD196EE4900000EB8E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C2098FC6196EE4900000EB8E /* LICENSE.txt */; };
-		C20990CE196EE4900000EB8E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C2098FC7196EE4900000EB8E /* README.md */; };
 		C20990CF196EE4900000EB8E /* YFDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098FC9196EE4900000EB8E /* YFDataBase.m */; };
 		C20990D0196EE4900000EB8E /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C2098FCB196EE4900000EB8E /* MJRefresh.bundle */; };
 		C20990D1196EE4900000EB8E /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2098FCE196EE4900000EB8E /* MJRefreshBaseView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -93,9 +89,6 @@
 		C20990FD196EE4900000EB8E /* SNNomarlNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2099033196EE4900000EB8E /* SNNomarlNewsModel.m */; };
 		C20990FE196EE4900000EB8E /* SNNomarlNewsPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2099035196EE4900000EB8E /* SNNomarlNewsPageModel.m */; };
 		C20990FF196EE4900000EB8E /* SNNomarlNewsTV.m in Sources */ = {isa = PBXBuildFile; fileRef = C2099037196EE4900000EB8E /* SNNomarlNewsTV.m */; };
-		C2099100196EE4900000EB8E /* SNSimpleNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C209903B196EE4900000EB8E /* SNSimpleNewsModel.m */; };
-		C2099101196EE4900000EB8E /* SNSimpleNewsTV.m in Sources */ = {isa = PBXBuildFile; fileRef = C209903D196EE4900000EB8E /* SNSimpleNewsTV.m */; };
-		C2099102196EE4900000EB8E /* SNSimplePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C209903F196EE4900000EB8E /* SNSimplePageModel.m */; };
 		C2099103196EE4900000EB8E /* SNUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2099042196EE4900000EB8E /* SNUserView.m */; };
 		C2099104196EE4900000EB8E /* SNUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2099044196EE4900000EB8E /* SNUserViewController.m */; };
 		C2099105196EE4900000EB8E /* 01-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = C2099047196EE4900000EB8E /* 01-refresh.png */; };
@@ -210,6 +203,12 @@
 		C2099172196EE4900000EB8E /* 99-umbrella.png in Resources */ = {isa = PBXBuildFile; fileRef = C20990B4196EE4900000EB8E /* 99-umbrella.png */; };
 		C218A3C3196F84C100B08421 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C218A3C2196F84C100B08421 /* CoreLocation.framework */; };
 		C218A3C5196F84E000B08421 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C218A3C4196F84E000B08421 /* libsqlite3.0.dylib */; };
+		C29E999C1970014D005E5BAB /* SNNewsImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29E999B1970014D005E5BAB /* SNNewsImageDetailViewController.m */; };
+		C29E999F1970016C005E5BAB /* SNNewsImageDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C29E999E1970016C005E5BAB /* SNNewsImageDetailView.m */; };
+		C2A061A2196FA89A005B0943 /* YRSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A061A1196FA89A005B0943 /* YRSideViewController.m */; };
+		C2A061A4196FB6DA005B0943 /* h2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A061A3196FB6DA005B0943 /* h2.jpg */; };
+		C2A83AC9196FDAD500C02444 /* SNNewsImageDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A83AC8196FDAD500C02444 /* SNNewsImageDetail.m */; };
+		C2A83ACF196FDE8000C02444 /* SNNewsImageDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A83ACE196FDE8000C02444 /* SNNewsImageDetailModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,8 +270,6 @@
 		C2098FB2196EE4900000EB8E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C2098FB4196EE4900000EB8E /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		C2098FB5196EE4900000EB8E /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
-		C2098FB6196EE4900000EB8E /* LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.md; sourceTree = "<group>"; };
-		C2098FB7196EE4900000EB8E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C2098FBA196EE4900000EB8E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		C2098FBB196EE4900000EB8E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		C2098FBC196EE4900000EB8E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -284,8 +281,6 @@
 		C2098FC2196EE4900000EB8E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		C2098FC3196EE4900000EB8E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		C2098FC4196EE4900000EB8E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		C2098FC6196EE4900000EB8E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		C2098FC7196EE4900000EB8E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C2098FC8196EE4900000EB8E /* YFDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFDataBase.h; sourceTree = "<group>"; };
 		C2098FC9196EE4900000EB8E /* YFDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDataBase.m; sourceTree = "<group>"; };
 		C2098FCB196EE4900000EB8E /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
@@ -385,12 +380,6 @@
 		C2099035196EE4900000EB8E /* SNNomarlNewsPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNNomarlNewsPageModel.m; sourceTree = "<group>"; };
 		C2099036196EE4900000EB8E /* SNNomarlNewsTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNNomarlNewsTV.h; sourceTree = "<group>"; };
 		C2099037196EE4900000EB8E /* SNNomarlNewsTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNNomarlNewsTV.m; sourceTree = "<group>"; };
-		C209903A196EE4900000EB8E /* SNSimpleNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSimpleNewsModel.h; sourceTree = "<group>"; };
-		C209903B196EE4900000EB8E /* SNSimpleNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSimpleNewsModel.m; sourceTree = "<group>"; };
-		C209903C196EE4900000EB8E /* SNSimpleNewsTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSimpleNewsTV.h; sourceTree = "<group>"; };
-		C209903D196EE4900000EB8E /* SNSimpleNewsTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSimpleNewsTV.m; sourceTree = "<group>"; };
-		C209903E196EE4900000EB8E /* SNSimplePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSimplePageModel.h; sourceTree = "<group>"; };
-		C209903F196EE4900000EB8E /* SNSimplePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSimplePageModel.m; sourceTree = "<group>"; };
 		C2099041196EE4900000EB8E /* SNUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUserView.h; sourceTree = "<group>"; };
 		C2099042196EE4900000EB8E /* SNUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNUserView.m; sourceTree = "<group>"; };
 		C2099043196EE4900000EB8E /* SNUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUserViewController.h; sourceTree = "<group>"; };
@@ -507,6 +496,21 @@
 		C20990B4196EE4900000EB8E /* 99-umbrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "99-umbrella.png"; sourceTree = "<group>"; };
 		C218A3C2196F84C100B08421 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C218A3C4196F84E000B08421 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C218A3C6196F895500B08421 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C218A3C7196F895500B08421 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		C218A3C8196F89A500B08421 /* LICENCE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE.md; sourceTree = "<group>"; };
+		C218A3C9196F89A500B08421 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C29E999A1970014D005E5BAB /* SNNewsImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNNewsImageDetailViewController.h; path = NewsImageDetail/SNNewsImageDetailViewController.h; sourceTree = "<group>"; };
+		C29E999B1970014D005E5BAB /* SNNewsImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNNewsImageDetailViewController.m; path = NewsImageDetail/SNNewsImageDetailViewController.m; sourceTree = "<group>"; };
+		C29E999D1970016C005E5BAB /* SNNewsImageDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNNewsImageDetailView.h; path = NewsImageDetail/SNNewsImageDetailView.h; sourceTree = "<group>"; };
+		C29E999E1970016C005E5BAB /* SNNewsImageDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNNewsImageDetailView.m; path = NewsImageDetail/SNNewsImageDetailView.m; sourceTree = "<group>"; };
+		C2A061A0196FA89A005B0943 /* YRSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSideViewController.h; sourceTree = "<group>"; };
+		C2A061A1196FA89A005B0943 /* YRSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSideViewController.m; sourceTree = "<group>"; };
+		C2A061A3196FB6DA005B0943 /* h2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h2.jpg; sourceTree = "<group>"; };
+		C2A83AC7196FDAD500C02444 /* SNNewsImageDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNNewsImageDetail.h; path = NewsImageDetail/SNNewsImageDetail.h; sourceTree = "<group>"; };
+		C2A83AC8196FDAD500C02444 /* SNNewsImageDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNNewsImageDetail.m; path = NewsImageDetail/SNNewsImageDetail.m; sourceTree = "<group>"; };
+		C2A83ACD196FDE8000C02444 /* SNNewsImageDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNNewsImageDetailModel.h; path = NewsImageDetail/SNNewsImageDetailModel.h; sourceTree = "<group>"; };
+		C2A83ACE196FDE8000C02444 /* SNNewsImageDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNNewsImageDetailModel.m; path = NewsImageDetail/SNNewsImageDetailModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -654,6 +658,7 @@
 		C2098F9C196EE4900000EB8E /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				C2A0619F196FA89A005B0943 /* YRSideViewController */,
 				C2098F9D196EE4900000EB8E /* AFNetworking */,
 				C2098FB3196EE4900000EB8E /* Base64 */,
 				C2098FB9196EE4900000EB8E /* fmdb */,
@@ -697,18 +702,10 @@
 			children = (
 				C2098FB4196EE4900000EB8E /* Base64.h */,
 				C2098FB5196EE4900000EB8E /* Base64.m */,
-				C2098FB6196EE4900000EB8E /* LICENCE.md */,
-				C2098FB7196EE4900000EB8E /* README.md */,
-				C2098FB8196EE4900000EB8E /* YRSideViewController */,
+				C218A3C8196F89A500B08421 /* LICENCE.md */,
+				C218A3C9196F89A500B08421 /* README.md */,
 			);
 			path = Base64;
-			sourceTree = "<group>";
-		};
-		C2098FB8196EE4900000EB8E /* YRSideViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = YRSideViewController;
 			sourceTree = "<group>";
 		};
 		C2098FB9196EE4900000EB8E /* fmdb */ = {
@@ -732,8 +729,8 @@
 		C2098FC5196EE4900000EB8E /* FMDB-ActiveRecord */ = {
 			isa = PBXGroup;
 			children = (
-				C2098FC6196EE4900000EB8E /* LICENSE.txt */,
-				C2098FC7196EE4900000EB8E /* README.md */,
+				C218A3C6196F895500B08421 /* README.md */,
+				C218A3C7196F895500B08421 /* LICENSE.txt */,
 				C2098FC8196EE4900000EB8E /* YFDataBase.h */,
 				C2098FC9196EE4900000EB8E /* YFDataBase.m */,
 			);
@@ -784,6 +781,7 @@
 		C2098FE7196EE4900000EB8E /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				C2A83AC6196FDAA400C02444 /* NewsImageDetail */,
 				C2098FE8196EE4900000EB8E /* Category */,
 				C2098FF1196EE4900000EB8E /* HeaderPage */,
 				C2098FF6196EE4900000EB8E /* Home */,
@@ -791,8 +789,6 @@
 				C2099023196EE4900000EB8E /* Login */,
 				C2099028196EE4900000EB8E /* NewsDetail */,
 				C2099031196EE4900000EB8E /* NomarlNewsModel */,
-				C2099038196EE4900000EB8E /* RefreshView */,
-				C2099039196EE4900000EB8E /* SimpleNewsModel */,
 				C2099040196EE4900000EB8E /* User */,
 			);
 			path = Scene;
@@ -852,20 +848,20 @@
 		C2099000196EE4900000EB8E /* NewsTableView */ = {
 			isa = PBXGroup;
 			children = (
-				C2099001196EE4900000EB8E /* SNHeaderView.h */,
-				C2099002196EE4900000EB8E /* SNHeaderView.m */,
-				C2099003196EE4900000EB8E /* SNHomeConst.h */,
-				C2099004196EE4900000EB8E /* SNHomeConst.m */,
-				C2099005196EE4900000EB8E /* SNNewsHeaderView.h */,
-				C2099006196EE4900000EB8E /* SNNewsHeaderView.m */,
-				C2099007196EE4900000EB8E /* SNNewsMenu.h */,
-				C2099008196EE4900000EB8E /* SNNewsMenu.m */,
-				C2099009196EE4900000EB8E /* SNNewsTableView.h */,
-				C209900A196EE4900000EB8E /* SNNewsTableView.m */,
-				C209900B196EE4900000EB8E /* SNNewsView.h */,
-				C209900C196EE4900000EB8E /* SNNewsView.m */,
 				C209900D196EE4900000EB8E /* SNNewsViewController.h */,
 				C209900E196EE4900000EB8E /* SNNewsViewController.m */,
+				C209900B196EE4900000EB8E /* SNNewsView.h */,
+				C209900C196EE4900000EB8E /* SNNewsView.m */,
+				C2099005196EE4900000EB8E /* SNNewsHeaderView.h */,
+				C2099006196EE4900000EB8E /* SNNewsHeaderView.m */,
+				C2099009196EE4900000EB8E /* SNNewsTableView.h */,
+				C209900A196EE4900000EB8E /* SNNewsTableView.m */,
+				C2099001196EE4900000EB8E /* SNHeaderView.h */,
+				C2099002196EE4900000EB8E /* SNHeaderView.m */,
+				C2099007196EE4900000EB8E /* SNNewsMenu.h */,
+				C2099008196EE4900000EB8E /* SNNewsMenu.m */,
+				C2099003196EE4900000EB8E /* SNHomeConst.h */,
+				C2099004196EE4900000EB8E /* SNHomeConst.m */,
 			);
 			path = NewsTableView;
 			sourceTree = "<group>";
@@ -941,26 +937,6 @@
 			path = NomarlNewsModel;
 			sourceTree = "<group>";
 		};
-		C2099038196EE4900000EB8E /* RefreshView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RefreshView;
-			sourceTree = "<group>";
-		};
-		C2099039196EE4900000EB8E /* SimpleNewsModel */ = {
-			isa = PBXGroup;
-			children = (
-				C209903A196EE4900000EB8E /* SNSimpleNewsModel.h */,
-				C209903B196EE4900000EB8E /* SNSimpleNewsModel.m */,
-				C209903C196EE4900000EB8E /* SNSimpleNewsTV.h */,
-				C209903D196EE4900000EB8E /* SNSimpleNewsTV.m */,
-				C209903E196EE4900000EB8E /* SNSimplePageModel.h */,
-				C209903F196EE4900000EB8E /* SNSimplePageModel.m */,
-			);
-			path = SimpleNewsModel;
-			sourceTree = "<group>";
-		};
 		C2099040196EE4900000EB8E /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -975,6 +951,7 @@
 		C2099045196EE4900000EB8E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C2A061A3196FB6DA005B0943 /* h2.jpg */,
 				C2099046196EE4900000EB8E /* icons */,
 			);
 			path = Resource;
@@ -1097,6 +1074,30 @@
 			path = icons;
 			sourceTree = "<group>";
 		};
+		C2A0619F196FA89A005B0943 /* YRSideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2A061A0196FA89A005B0943 /* YRSideViewController.h */,
+				C2A061A1196FA89A005B0943 /* YRSideViewController.m */,
+			);
+			path = YRSideViewController;
+			sourceTree = "<group>";
+		};
+		C2A83AC6196FDAA400C02444 /* NewsImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C29E999A1970014D005E5BAB /* SNNewsImageDetailViewController.h */,
+				C29E999B1970014D005E5BAB /* SNNewsImageDetailViewController.m */,
+				C29E999D1970016C005E5BAB /* SNNewsImageDetailView.h */,
+				C29E999E1970016C005E5BAB /* SNNewsImageDetailView.m */,
+				C2A83AC7196FDAD500C02444 /* SNNewsImageDetail.h */,
+				C2A83AC8196FDAD500C02444 /* SNNewsImageDetail.m */,
+				C2A83ACD196FDE8000C02444 /* SNNewsImageDetailModel.h */,
+				C2A83ACE196FDE8000C02444 /* SNNewsImageDetailModel.m */,
+			);
+			name = NewsImageDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1176,7 +1177,6 @@
 				C2099114196EE4900000EB8E /* 105-piano.png in Resources */,
 				C2099130196EE4900000EB8E /* 33-cabinet.png in Resources */,
 				C2099125196EE4900000EB8E /* 22-skull-n-crossbones.png in Resources */,
-				C20990C7196EE4900000EB8E /* README.md in Resources */,
 				C209910D196EE4900000EB8E /* 09-chat2.png in Resources */,
 				C2099113196EE4900000EB8E /* 104-index-cards.png in Resources */,
 				C2099119196EE4900000EB8E /* 11-clock.png in Resources */,
@@ -1195,7 +1195,6 @@
 				C2099137196EE4900000EB8E /* 40-inbox.png in Resources */,
 				C209910C196EE4900000EB8E /* 08-chat.png in Resources */,
 				C209913B196EE4900000EB8E /* 44-shoebox.png in Resources */,
-				C20990C6196EE4900000EB8E /* LICENCE.md in Resources */,
 				C2099131196EE4900000EB8E /* 34-coffee.png in Resources */,
 				C2099134196EE4900000EB8E /* 37-suitcase.png in Resources */,
 				C20990C3196EE4900000EB8E /* LICENSE in Resources */,
@@ -1250,7 +1249,7 @@
 				C2099116196EE4900000EB8E /* 107-widescreen.png in Resources */,
 				C2099172196EE4900000EB8E /* 99-umbrella.png in Resources */,
 				C2099129196EE4900000EB8E /* 26-bandaid.png in Resources */,
-				C20990CE196EE4900000EB8E /* README.md in Resources */,
+				C2A061A4196FB6DA005B0943 /* h2.jpg in Resources */,
 				C209911E196EE4900000EB8E /* 15-tags.png in Resources */,
 				C2099156196EE4900000EB8E /* 71-compass.png in Resources */,
 				C2099150196EE4900000EB8E /* 65-note.png in Resources */,
@@ -1266,7 +1265,6 @@
 				C2099163196EE4900000EB8E /* 84-lightbulb.png in Resources */,
 				C209912D196EE4900000EB8E /* 30-key.png in Resources */,
 				C209916C196EE4900000EB8E /* 93-thermometer.png in Resources */,
-				C20990CD196EE4900000EB8E /* LICENSE.txt in Resources */,
 				C209913D196EE4900000EB8E /* 46-movie2.png in Resources */,
 				C2099136196EE4900000EB8E /* 39-spraycan.png in Resources */,
 				C209911D196EE4900000EB8E /* 14-tag.png in Resources */,
@@ -1312,6 +1310,7 @@
 			files = (
 				C20990DA196EE4900000EB8E /* UIProgressView+AFNetworking.m in Sources */,
 				C20990D9196EE4900000EB8E /* UIImageView+AFNetworking.m in Sources */,
+				C2A83ACF196FDE8000C02444 /* SNNewsImageDetailModel.m in Sources */,
 				C20990C2196EE4900000EB8E /* AFURLSessionManager.m in Sources */,
 				C20990E5196EE4900000EB8E /* SNSimpleNewsCell.m in Sources */,
 				C20990F5196EE4900000EB8E /* SNLocalNewsTV.m in Sources */,
@@ -1323,10 +1322,10 @@
 				C2099104196EE4900000EB8E /* SNUserViewController.m in Sources */,
 				C20990CA196EE4900000EB8E /* FMDatabasePool.m in Sources */,
 				C20990B8196EE4900000EB8E /* SNMainMenu.m in Sources */,
-				C2099101196EE4900000EB8E /* SNSimpleNewsTV.m in Sources */,
 				C20990FF196EE4900000EB8E /* SNNomarlNewsTV.m in Sources */,
 				C20990BD196EE4900000EB8E /* AFNetworkReachabilityManager.m in Sources */,
 				C20990D6196EE4900000EB8E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				C2A83AC9196FDAD500C02444 /* SNNewsImageDetail.m in Sources */,
 				C2099103196EE4900000EB8E /* SNUserView.m in Sources */,
 				C20990EA196EE4900000EB8E /* SNNewsMenu.m in Sources */,
 				C20990CB196EE4900000EB8E /* FMDatabaseQueue.m in Sources */,
@@ -1338,20 +1337,20 @@
 				C20990D7196EE4900000EB8E /* UIAlertView+AFNetworking.m in Sources */,
 				C20990C9196EE4900000EB8E /* FMDatabaseAdditions.m in Sources */,
 				C20990ED196EE4900000EB8E /* SNNewsViewController.m in Sources */,
-				C2099100196EE4900000EB8E /* SNSimpleNewsModel.m in Sources */,
 				C20990F1196EE4900000EB8E /* SNPolPageModel.m in Sources */,
 				C20990EE196EE4900000EB8E /* SNCollectionHeadView.m in Sources */,
 				C20990B9196EE4900000EB8E /* SNMainMenuModel.m in Sources */,
 				C20990DF196EE4900000EB8E /* SNCategoryView.m in Sources */,
+				C29E999C1970014D005E5BAB /* SNNewsImageDetailViewController.m in Sources */,
 				C20990E8196EE4900000EB8E /* SNHomeConst.m in Sources */,
 				C20990CC196EE4900000EB8E /* FMResultSet.m in Sources */,
 				C20990BF196EE4900000EB8E /* AFURLConnectionOperation.m in Sources */,
+				C29E999F1970016C005E5BAB /* SNNewsImageDetailView.m in Sources */,
 				C20990BC196EE4900000EB8E /* AFHTTPSessionManager.m in Sources */,
 				C20990C0196EE4900000EB8E /* AFURLRequestSerialization.m in Sources */,
 				C20990FD196EE4900000EB8E /* SNNomarlNewsModel.m in Sources */,
 				C20990E2196EE4900000EB8E /* SNHeaderPageModel.m in Sources */,
 				C20990C5196EE4900000EB8E /* Base64.m in Sources */,
-				C2099102196EE4900000EB8E /* SNSimplePageModel.m in Sources */,
 				C20990E1196EE4900000EB8E /* SNHeaderNewsTV.m in Sources */,
 				C20990B5196EE4900000EB8E /* SNAppDelegate.m in Sources */,
 				C20990E6196EE4900000EB8E /* SNTimeCell.m in Sources */,
@@ -1369,6 +1368,7 @@
 				C20990D1196EE4900000EB8E /* MJRefreshBaseView.m in Sources */,
 				C20990FA196EE4900000EB8E /* SNNewsDetailModel.m in Sources */,
 				C20990E4196EE4900000EB8E /* SNShowImageCell.m in Sources */,
+				C2A061A2196FA89A005B0943 /* YRSideViewController.m in Sources */,
 				C20990D3196EE4900000EB8E /* MJRefreshFooterView.m in Sources */,
 				C20990F7196EE4900000EB8E /* SNLoginView.m in Sources */,
 				C20990D8196EE4900000EB8E /* UIButton+AFNetworking.m in Sources */,

@@ -11,7 +11,8 @@
 @interface SNHeaderView : UIView<UIScrollViewDelegate>
 
 @property(nonatomic,retain)NSArray * firstNewsArray;//!<接收新闻数组
-@property(nonatomic,retain)UIScrollView * scrollView;//!<头部滚动视图
-@property(nonatomic,retain)NSMutableArray * imageArray;//!<回传头部滚动视图图像数组
+
+//@property(nonatomic,retain)UIScrollView * scrollView;//!<头部滚动视图
+//@property(nonatomic,retain)NSMutableArray * imageArray;//!<回传头部滚动视图图像数组
 
 @end

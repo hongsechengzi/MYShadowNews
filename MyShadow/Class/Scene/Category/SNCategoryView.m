@@ -31,7 +31,7 @@
         [_categoryDic release];
         _categoryDic = [categoryDic retain];
     }
-    self.backgroundColor = [UIColor grayColor];
+    //self.backgroundColor = [UIColor grayColor];
     NSArray * titleArray = [categoryDic allKeys];
     
     int i = 0;
@@ -60,7 +60,7 @@
 
 - (void)didClickButtonAction:(UIButton *)button
 {
-    NSLog(@"button.titleLabel.text %@",button.titleLabel.text);
+    //NSLog(@"button.titleLabel.text %@",button.titleLabel.text);
     if ([self.delegate respondsToSelector:@selector(categoryViewDidClickButtonAction:)]) {
         [self.delegate categoryViewDidClickButtonAction:button];
     }

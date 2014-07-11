@@ -24,7 +24,7 @@ typedef void(^SNNewsModelFailBlock)(NSError * error);
 
 @interface SNNewsDetailModel : NSObject
 
-+ (instancetype)model;
+
 /**
  *  根据新闻唯一标识符获取新闻详情.
  *

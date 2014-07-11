@@ -22,7 +22,7 @@
 {
     CGFloat height = self.bounds.size.height;
   //  CGFloat width = self.bounds.size.width;
-    self.backgroundColor = [UIColor yellowColor];
+  //  self.backgroundColor = [UIColor yellowColor];
     
     /*
     UIView * loginView = [[UIView alloc] initWithFrame:CGRectMake(30, 20, 200, 250)];

@@ -8,7 +8,9 @@
 
 #import "SNTimeCell.h"
 #import "SNHomeConst.h"
-#import "SNSimpleNewsModel.h"
+//#import "SNSimpleNewsModel.h"
+
+#import "SNNomarlNewsModel.h"
 
 @interface SNTimeCell ()
 
@@ -63,7 +65,7 @@
     
 }
 
-- (void)setNews:(SNSimpleNewsModel *)news
+- (void)setNews:(SNNomarlNewsModel *)news
 {
     if (_news != news) {
         [_news release];

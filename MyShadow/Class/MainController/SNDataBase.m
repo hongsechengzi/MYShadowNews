@@ -48,7 +48,7 @@ static FMDatabase * db = nil;
     
     [db open];
     
-    [db executeUpdate:@"CREATE TABLE TableNews (title TEXT NOT NULL, imgSrc TEXT, replyCount TEXT, docId TEXT PRIMARY KEY, digest TEXT, tag TEXT, imgExtraArray TEXT, publishTime TEXT,urlKey TEXT)"];
+    [db executeUpdate:@"CREATE TABLE TableNews (title TEXT NOT NULL, imgSrc TEXT, replyCount TEXT, docId TEXT PRIMARY KEY, digest TEXT, tag TEXT, imgExtraArray TEXT, publishTime TEXT,photosetID TEXT,urlKey TEXT)"];
     
     return db;
 }

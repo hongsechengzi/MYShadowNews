@@ -13,6 +13,7 @@
 #import "FMDB.h"
 #import "SNDataBase.h"
 
+
 @implementation SNNomarlNewsPageModel
 
 + (void) nomarlMainMenu:(SNMainMenu *)newsItem range:(NSRange)range success:(SNNormalPageModelSuccessBlock)success fail:(SNNormalPageModelFailBlock)fail
@@ -37,20 +38,24 @@
             NSString * digest = [newsOriginal objectForKey:@"digest"];
             NSString * tag = [newsOriginal objectForKey:@"TAG"];
             NSArray * imgExtraArray = [newsOriginal objectForKey:@"imgextra"];
+            NSString * publishTime = [newsOriginal objectForKey: @"lmodify"];
             
+            NSString * photosetID = [newsOriginal objectForKey:@"photosetID"];
             
-            NSMutableString * str = [NSMutableString string];
-            for (NSDictionary * dic in imgExtraArray) {
-                NSString * imgStr = [dic objectForKey:@"imgsrc"];
-                [str appendFormat:@"%@,",imgStr];
-            }
+       //     NSLog(@"photosetID = %@",photosetID);
+//            NSMutableString * str = [NSMutableString string];
+//            for (NSDictionary * dic in imgExtraArray) {
+//                NSString * imgStr = [dic objectForKey:@"imgsrc"];
+//                [str appendFormat:@"%@,",imgStr];
+//            }
            // NSLog(@"str = %@",str);
            // NSLog(@"imgExtraArray =  %@",imgExtraArray);
             
-            [db executeUpdate:@"insert into TableNews(title, imgSrc,replyCount,docId,digest,tag,imgExtraArray,urlKey) values(?,?,?,?,?,?,?,?)",title,imgSrc,[NSNumber numberWithUnsignedInteger:replyCount],docId,digest,tag,str,urlKey];
+            [db executeUpdate:@"insert into TableNews(title, imgSrc,replyCount,publishTime,docId,digest,tag,imgExtraArray,photosetID,urlKey) values(?,?,?,?,?,?,?,?,?,?)",title,imgSrc,[NSNumber numberWithUnsignedInteger:replyCount],publishTime,docId,digest,tag,imgExtraArray,photosetID,urlKey];
             
           
-            [normalNewsArray addObject:[SNNomarlNewsModel normarlNewsWithImgSrc:imgSrc title:title replyCount:replyCount docId:docId digest:digest tag:tag imgExtraArray:imgExtraArray]];
+            [normalNewsArray addObject:[SNNomarlNewsModel normarlNewsWithImgSrc:imgSrc title:title replyCount:replyCount  publishTime: publishTime docId:docId digest:digest tag:tag imgExtraArray:imgExtraArray photosetID:photosetID]];
+            
         }];
         success(normalNewsArray);
     } failure:^(AFHTTPRequestOperation * operation, NSError * error) {

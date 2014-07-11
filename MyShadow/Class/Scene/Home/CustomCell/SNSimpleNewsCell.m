@@ -7,8 +7,9 @@
 //
 
 #import "SNSimpleNewsCell.h"
-#import "SNHomeConst.h"
-#import "SNSimpleNewsModel.h"
+//#import "SNHomeConst.h"
+//#import "SNSimpleNewsModel.h"
+#import "SNNomarlNewsModel.h"
 
 @interface SNSimpleNewsCell ()
 
@@ -53,7 +54,7 @@
     
 }
 
-- (void)setNews:(SNSimpleNewsModel *)news
+- (void)setNews:(SNNomarlNewsModel *)news
 {
     if (_news != news) {
         [_news release];

@@ -36,9 +36,11 @@
             NSString * docId = [newsOriginal objectForKey: @"docid"];
             NSString * digest = [newsOriginal objectForKey:@"digest"];
             NSString * tag = [newsOriginal objectForKey:@"TAG"];
-            
+            NSString * publishTime = [newsOriginal objectForKey: @"lmodify"];
             NSArray * imgExtraArray = [newsOriginal objectForKey:@"imgextra"];
-            [headerNewsArray addObject:[SNNomarlNewsModel normarlNewsWithImgSrc:imgSrc title:title replyCount:replyCount docId:docId digest:digest tag:tag imgExtraArray:imgExtraArray]];
+            NSString * photosetID = [newsOriginal objectForKey:@"photosetID"];
+            
+            [headerNewsArray addObject:[SNNomarlNewsModel normarlNewsWithImgSrc:imgSrc title:title replyCount:replyCount  publishTime: publishTime docId:docId digest:digest tag:tag imgExtraArray:imgExtraArray photosetID:photosetID]];
         }];
         success(headerNewsArray);
     } failure:^(AFHTTPRequestOperation * operation, NSError * error) {

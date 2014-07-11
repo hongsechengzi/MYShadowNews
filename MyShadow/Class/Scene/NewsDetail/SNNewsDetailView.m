@@ -61,8 +61,7 @@
                 
                 NSRegularExpression * regex = [NSRegularExpression regularExpressionWithPattern:[NSString stringWithFormat:@"<!--VIDEO#%@-->", [NSNumber numberWithUnsignedInteger: idx]] options:NSRegularExpressionCaseInsensitive error:nil];
                 
-                [regex replaceMatchesInString:string options:0 range:NSMakeRange(0, [string length]) withTemplate:[NSString stringWithFormat:@"<embed src= %@ width = 300 height = 150 volume = 200 autostart = true webkit-playsinline/embed>",[self.SNNDDetail.videoArray[idx] objectForKey:@"url_mp4"]]];
-              
+                [regex replaceMatchesInString:string options:0 range:NSMakeRange(0, [string length]) withTemplate:[NSString stringWithFormat:@"<embed src= %@ width = 300 height = 150 volume = 200 autostart = true webkit-playsinline/embed>",[self.SNNDDetail.videoArray[idx] objectForKey:@"url_mp4"]]];              
             }];
         }
           self.SNNDWebView.allowsInlineMediaPlayback = YES;

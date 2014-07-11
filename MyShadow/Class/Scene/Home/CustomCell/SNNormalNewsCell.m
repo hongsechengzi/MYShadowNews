@@ -68,18 +68,6 @@
     
 }
 
-//- (void)setNews:(SNLocalNewsModel *)news
-//{
-//    if (_news != news) {
-//        [_news release];
-//        _news = [news retain];
-//    }
-//    self.titleLabel.text = news.title;
-//    self.detailLabel.text = news.title;
-//    NSURL * url = [NSURL URLWithString:news.imgSrc];
-//    [self.newsImage setImageWithURL:url];
-//}
-
 - (void)setNews:(SNNomarlNewsModel *)news
 {
     CGFloat height = SNNewsNormalCellHeight;

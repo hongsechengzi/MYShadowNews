@@ -13,12 +13,6 @@
 
 @implementation SNNewsDetailModel
 
-+ (instancetype)model
-{
-    SNNewsDetailModel * model = [[[self class] alloc] init];
-    SNAutorelease(model);
-    return model;
-}
 + (void) detailModelWithDocId: (NSString *) docId
                       success: (SNNewsModelSuccessBlock) success
                          fail: (SNNewsModelFailBlock) fail

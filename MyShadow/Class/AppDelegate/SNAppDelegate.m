@@ -9,6 +9,11 @@
 #import "SNAppDelegate.h"
 #import "SNMainController.h"
 
+#import "YRSideViewController.h"
+#import "SNCategoryViewController.h"
+#import "SNUserViewController.h"
+#import "SNNewsViewController.h"
+
 @implementation SNAppDelegate
 - (void)dealloc
 {
@@ -22,30 +27,24 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    //测试左边栏
-//    SNCategoryViewController * categoryVC = [[SNCategoryViewController alloc] init];
-//   self.window.rootViewController = categoryVC;
-    //测试右边栏个人
-//    SNUserViewController * userVC = [[SNUserViewController alloc] init];
-//    self.window.rootViewController = userVC;
-    //测试登入页面
     
-   
-//    SNLoginViewController * userVC = [[SNLoginViewController alloc] init];
-//    UINavigationController * rootNC = [[UINavigationController alloc] initWithRootViewController:userVC];
-//    self.window.rootViewController = rootNC;
-//     SNPolViewController * VC = [[SNPolViewController alloc] init];
-//     self.window.rootViewController = VC ;
+    self.sideViewController = [[YRSideViewController alloc] initWithNibName:nil bundle:nil];
+    SNCategoryViewController * categoryVC = [[SNCategoryViewController alloc] init];
+    SNUserViewController  * userVC = [[SNUserViewController alloc] init];
+    self.sideViewController.rootViewController = [[SNMainController sharedInstance] navController];
+    self.sideViewController.leftViewController = categoryVC;
+    self.sideViewController.rightViewController = userVC;
+    self.sideViewController.leftViewShowWidth = 200;
+    self.sideViewController.needSwipeShowMenu = false;
+    self.window.rootViewController = self.sideViewController;
+    
+    [self.sideViewController setRootViewMoveBlock:^(UIView *rootView, CGRect orginFrame, CGFloat xoffset) {
+        //使用简单的平移动画
+        rootView.frame=CGRectMake(xoffset, orginFrame.origin.y, orginFrame.size.width, orginFrame.size.height);
+    }];
 
-//     [SNPolPageModel polPageSuccess:^(NSDictionary * polDic) {
-//         NSLog(@"headerNewsArray = %@",polDic);
-//     } fail:^(NSError *error) {
-//         NSLog(@"error:%@",error);
-//     }];
     
-   
-    
-    self.window.rootViewController = [[SNMainController sharedInstance] navController];
+   //self.window.rootViewController = [[SNMainController sharedInstance] navController];
     
     return YES;
 }

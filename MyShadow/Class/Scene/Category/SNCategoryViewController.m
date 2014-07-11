@@ -43,7 +43,7 @@
 - (void)categoryViewDidClickButtonAction:(UIButton *)button
 {
     
-  NSLog(@"button.titleLabel.text %@",button.titleLabel.text);
+ // NSLog(@"button.titleLabel.text %@",button.titleLabel.text);
     NSString * categoryName = button.titleLabel.text;
     NSDictionary * dic = [SNCategoryPageModel categoryDic];
     

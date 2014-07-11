@@ -49,19 +49,17 @@
         self.title = title;
         self.preLoad = preLoad;
     }
+    
     [self setupSubviews];
     return self;
 }
 
 - (void)setupSubviews
 {
-
     self.tableHeaderView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH,SNNewsTableHeaderViewHeight)] autorelease];
-    self.tableHeaderView.backgroundColor = [UIColor grayColor];
+   // self.tableHeaderView.backgroundColor = [UIColor grayColor];
     self.headerView = [[[SNHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SNNewsTableHeaderViewHeight)] autorelease];
-
-    [self.tableHeaderView addSubview:self.headerView];
-    
+    [self.tableHeaderView addSubview:self.headerView];    
     self.footerRefreshView = [MJRefreshFooterView footer];
     self.footerRefreshView.scrollView = self;
     self.headerRefreshView = [MJRefreshHeaderView header];
